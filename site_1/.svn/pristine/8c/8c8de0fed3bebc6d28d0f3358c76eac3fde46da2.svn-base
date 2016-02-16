@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>НАШИ ФОТГРАФИИ</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <!-- stylesheets -->
+  <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/static/css/colour.css" rel="stylesheet" type="text/css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="/static/text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+
+    <!-- begin header -->
+    <header>
+      <div id="logo"><h1>ФОТОГРАФИИ<a href="#">НАШЕЙ</a>СЕМЬИ</h1></div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="index.html">Главная</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="#">Наши фото</a>
+            <ul>
+              <li><a href="portfolio_one.html">Альбом один</a></li>
+              <li><a href="portfolio_two.html">Альбом два</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- begin content -->
+    <div id="site_content">
+      <ul class="slideshow">
+        <li class="show"><img width="950" height="450" src="/static/images/foto_1.jpg" alt="&quot;You can put a caption for your image right here&quot;" /></li>
+        <li><img width="950" height="450" src="/static/images/foto_2.jpg" alt="&quot;You can put a description of the image here if you like, or anything else if you want.&quot;" /></li>
+        <li><img width="950" height="450" src="/static/images/foto_3.jpg" alt="&quot;You can put a description of the image here if you like, or anything else if you want.&quot;" /></li>
+        <li><img width="950" height="450" src="/static/images/foto_4.jpg" alt="&quot;You can put a description of the image here if you like, or anything else if you want.&quot;" /></li>
+        <li><img width="950" height="450" src="/static/images/foto_5.jpg" alt="&quot;You can put a description of the image here if you like, or anything else if you want.&quot;" /></li>
+      </ul>
+    </div>
+    <!-- end content -->
+
+    <!-- begin footer -->
+    <footer>
+      <p>Разработка &copy; 2015 Маслак Алексей. Все права защищены. {#<a href="http://www.css3templates.co.uk">Design from css3templates.co.uk</a>.#}</p>
+      <p><img src="/static/images/twitter.png" alt="twitter" />&nbsp;<img src="/static/images/facebook.png" alt="facebook" />&nbsp;<img src="/static/images/rss.png" alt="rss" /></p>
+    </footer>
+    <!-- end footer -->
+
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="/static/js/image_fade.js"></script>
+  <!-- initialise sooperfish menu -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

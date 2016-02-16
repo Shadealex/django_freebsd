@@ -1,0 +1,46 @@
+{# {% load static %} #}
+<!DOCTYPE html>
+<html>
+<head>
+	{% block title %}<title>НАШИ ФОТГРАФИИ </title>{% endblock title %}
+	{% block head %}
+		<meta name="description" content="website description" />
+  		<meta name="keywords" content="website keywords, website keywords" />
+  		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  	{% endblock head %}
+</head>
+<body>
+		{% block site %}
+			{% block header %}
+				<!-- begin header -->
+				    <header>
+				      <div id="logo"><h1>ФОТОГРАФИИ<a href="#">НАШЕЙ</a>СЕМЬИ</h1></div>
+				      <nav>
+				        <ul class="sf-menu" id="nav">
+				          <li class="selected"><a href="index.html">Главная</a></li>
+				          <li><a href="about.html">Про нас</a></li>
+				          <li><a href="#">Наши фото</a>
+				            <ul>
+				              <li><a href="portfolio_one.html">Альбом один</a></li>
+				              <li><a href="portfolio_two.html">Альбом два</a></li>
+				            </ul>
+				          </li>
+				          <li><a href="blog.html">Блог</a></li>
+				          <li><a href="contact.html">Контакты</a></li>
+				        </ul>
+				      </nav>
+				    </header>
+				   <!-- end header -->
+			{% endblock header %}
+
+			{% block footer %}
+				<!-- begin footer -->
+			    <footer>
+			      <p>Разработка &copy; 2015 Маслак Алексей. Все права защищены. {#<a href="http://www.css3templates.co.uk">Design from css3templates.co.uk</a>.#}</p>
+			      <p><img src="/static/images/twitter.png" alt="twitter" />&nbsp;<img src="/static/images/facebook.png" alt="facebook" />&nbsp;<img src="/static/images/rss.png" alt="rss" /></p>
+			    </footer>
+			    <!-- end footer -->
+			{% endblock footer %}
+		{% endblock site %}
+</body>
+</html>

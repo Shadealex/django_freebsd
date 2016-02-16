@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+            <title>test page</title>
+            <link href="{% static 'photoart/css/style.css' %}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class='blog_text'>privet</div>
+        <div class='a'>
+        	<img width="950" height="450" src="{% static "photoart/images/home_1.jpg" %}"/>
+        </div>
+    </body>
+</html>
