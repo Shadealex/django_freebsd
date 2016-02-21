@@ -59,7 +59,9 @@ ROOT_URLCONF = 'admin_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+        os.path.join(BASE_DIR, 'template'),
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,6 +69,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.static',
+                'django.template.context_processors.i18n',
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -110,12 +115,26 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+DATE_FORMAT = {
+    '%d %B %Y'
+}
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
-TIME_ZONE = 'UTC'
+LOCALE_PATHS = (
+    BASE_DIR + '/locale',
+                )
+
+gettext = lambda s:s
+
+LANGUAGES = (
+    ('en', gettext('English')),
+    ('ru', gettext('Russian')),
+            )
+
+TIME_ZONE = 'Europe/Kiev'
 
 USE_I18N = True
 
