@@ -7,7 +7,7 @@ from django.conf import settings
 
 
 class Verify_type(models.Model):
-	name = models.CharField(verbose_name = _('Название'), max_length=100)
+	name = models.CharField(verbose_name = _('Название'), max_length=100, help_text =_('Название теста'))
 	visibility = models.BooleanField(verbose_name = _('Статус'), default=True, db_index=True)
 	comment = models.TextField(verbose_name = _('Комментарий'), blank=True)
 
