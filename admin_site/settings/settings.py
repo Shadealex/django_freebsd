@@ -26,10 +26,32 @@ logging.basicConfig(
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '9dhyj4u*(6)ep=)hyys-q4($*7)cr1e)4ndo#p*!vx0lqbw$ny'
 
+
+#MAIL
+ADMINS = (
+    ('atlas-sat','atlas-sat@yandex.ru'),
+    )
+
+# yandex.ru
+# SERVER_EMAIL = 'bububu@ip.net.ua'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.i.ua'
+# EMAIL_PORT = 25
+# EMAIL_HOST_USER = "login"
+# EMAIL_HOST_PASSWORD = ""
+# EMAIL_USE_TLS = False
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_USE_TLS = False
+EMAIL_HOST_USER = "atlas-sat@yandex.ru"
+EMAIL_HOST_PASSWORD = "Lae4aep5"
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
