@@ -120,7 +120,8 @@ DATABASES = {
        'NAME': 'admin_site',                      # Or path to database file if using sqlite3.
        'USER': 'test',                      # Not used with sqlite3.
        'PASSWORD': 'test',                  # Not used with sqlite3.
-       'HOST': '10.10.10.102',       # Set to empty string for localhost. Not used with sqlite3.
+       # 'HOST': '10.10.10.102',       # Set to empty string for localhost. Not used with sqlite3.
+       'HOST': 'usi.pp.ua',       # Set to empty string for localhost. Not used with sqlite3.
        'PORT': '5432',
     }
 }
