@@ -1,12 +1,12 @@
 html, body{
-	width: 100%;
-	height: 100%;
+	width: 99%;
+	height: 90%;
 	background: #dcdcdc;
 }
 
 #top_footer{
 	background: url(../img/footer-background.jpg);
-	height: 105px;
+	height: 110px;
 }
 
 #top_footer_zagolovok{
