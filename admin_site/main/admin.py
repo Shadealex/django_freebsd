@@ -1,6 +1,6 @@
 #-*-coding: utf-8 -*-
 from django.contrib import admin
-from main.models import Verify_type, Server, Statistic
+from main.models import Verify_type, Server
 
 # Register your models here.
 class Verify_typeAdmin(admin.ModelAdmin):
@@ -16,10 +16,3 @@ class ServerAdmin(admin.ModelAdmin):
 	search_fields = ['name', 'ip']
 
 admin.site.register(Server, ServerAdmin)
-
-class StatisticAdmin(admin.ModelAdmin):
-	list_display = ['name', 'type_verify', 'date_verify', 'status_verify']
-	list_filter = ['name', 'type_verify', 'date_verify']
-	search_fields = ['name']
-
-admin.site.register(Statistic, StatisticAdmin)

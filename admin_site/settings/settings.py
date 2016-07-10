@@ -65,6 +65,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',
     'main',
+    'stat_verify',
 ]
 
 MIDDLEWARE_CLASSES = [
