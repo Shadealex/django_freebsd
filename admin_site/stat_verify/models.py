@@ -7,10 +7,10 @@ from main.models import Server, Verify_type
 class Statistic(models.Model):
 	name = models.ForeignKey(Server, verbose_name=_('Имя сервера'))
 	type_verify = models.ForeignKey(Verify_type, verbose_name=_('Название теста'))
-	date_verify = models.DateTimeField(verbose_name = _('Дата проверки'), auto_now=False)
+	date_verify = models.DateTimeField(verbose_name = _('Дата проверки'),auto_now_add=True)
 	status_verify = models.CharField(verbose_name = _('Результат'), max_length=100)
 
-	def __str__(self):
+	def __repr__(self):
 		return self.name
 
 	def __unicode__(self):
